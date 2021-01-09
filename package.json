@@ -1,0 +1,22 @@
+{
+  "name": "nyaa-anime-grabber",
+  "version": "0.0.1",
+  "description": "grabs torrent links from nyaa rss feeds",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyaagrab"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fluentinstroll/nyaa-anime-grabber.git"
+  },
+  "author": "Raymond Rambo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fluentinstroll/nyaa-anime-grabber/issues"
+  },
+  "homepage": "https://github.com/fluentinstroll/nyaa-anime-grabber#readme",
+  "dependencies": {
+    "nyaapi": "^2.3.3"
+  }
+}
