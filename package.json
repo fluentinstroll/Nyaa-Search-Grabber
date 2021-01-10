@@ -4,7 +4,7 @@
   "description": "grabs torrent links from nyaa rss feeds",
   "main": "index.js",
   "scripts": {
-    "test": "nyaagrab"
+    "nyaagrab": "node index.js"
   },
   "repository": {
     "type": "git",
