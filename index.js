@@ -8,7 +8,11 @@ const { si } = require('nyaapi');
  * - open links in torrent software(? Maybe this needs to be a separate script) 
  *********************************************************************************/
 let searchTerm = 'dr stone';
+const limit = 10;
 
 si.searchAll(searchTerm, {filter: 2, })
-.then((data) => console.log(data))
+.then((data) => 
+    data.forEach(data => {
+        console.log(`name: ${data.name} link: ${data.torrent}`);
+    }))
 .catch((err) => console.log(err));
