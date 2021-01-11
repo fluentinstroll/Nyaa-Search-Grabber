@@ -1,4 +1,5 @@
 const { si } = require('nyaapi');
+const fs = require('fs');
 
 /**********************************************************************************
  * API info: https://github.com/Kylart/Nyaapi/wiki/Nyaa.si#search
@@ -27,4 +28,11 @@ si.searchAll(searchTerm, {filter: 2, })
         if(index < limit)
             console.log(`name: ${data.name} link: ${data.torrent}`);
     }))
-.catch((err) => console.log(err));
+.catch((err) => {
+    console.log('Could not connect to https://nyaa.si/, is the website down?')
+    
+    fs.writeFile('./error.log', err.toString(), (err) => {
+        if (err) throw err;
+        console.log('Check the error.log for more info.')
+    })
+});
