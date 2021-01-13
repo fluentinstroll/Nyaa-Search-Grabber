@@ -4,7 +4,8 @@
   "description": "grabs torrent links from nyaa rss feeds",
   "main": "index.js",
   "scripts": {
-    "nyaagrab": "node index.js"
+    "nyaagrab": "node index.js",
+    "prettier": "prettier '*.js' --write"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/fluentinstroll/nyaa-anime-grabber#readme",
   "dependencies": {
-    "nyaapi": "^2.3.3"
+    "nyaapi": "^2.3.3",
+    "prettier": "^2.2.1"
   }
 }
